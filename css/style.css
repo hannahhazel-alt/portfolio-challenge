@@ -8,9 +8,39 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
-h1,
-h2,
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.page-wrapper {
+  display: grid;
+  grid-template-rows: 70%;
+}
+.header {
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F38DB1;
+}
+h1{
+  color: #7D1A52;
+  padding: 15px;
+}
+h2 {
+  margin-right: 20px;
+  color: #7D1A52;
+}
+.hero-banner {
+  background-image: url('https://pbs.twimg.com/media/DofqKm6XsAEMEid?format=jpg&name=large');
+    background-position: bottom;
+  width: 100%;
+    height: 300px;
+    display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-wrap: wrap;
+}
 h3,
 h4,
 h5,
@@ -18,6 +48,82 @@ h6 {
   margin: 0;
 }
 
+.navbar ul{
+  list-style-type: none;
+  background-color: #F38DB1;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover{
+  background-color:#EA509C;
+}
+.navbar li{
+  float: left;
+}
 p {
   margin: 0;
+}
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.page-section h3{
+  width: 20%;
+  text-align: right;
+  padding-right: 15px;
+}
+.page-section .info{
+  border-left: 2px solid black;
+  padding-left: 20px;
+  width: 80%;
+}
+.picture-one{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.title{
+position: absolute;
+left: 0;
+top: 50px;
+background-color: aquamarine;
+}
+.contact-info ul{
+list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-info a {
+  color: #F38DB1;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: left;
+}
+
+.contact-info a:hover {
+  background-color: #EA509C;
+}
+
+.contact-info li {
+  float: left;
 }
