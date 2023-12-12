@@ -109,30 +109,45 @@ p {
 
 .project-1 {
   grid-area: project-1;
+ 
 }
-.project-1 img {
+.project-1 img, .project-2 img, .project-3 img, .project-4 img, .project-5 img{
   height: 100%;
-  width: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.project-1 a:hover {
+  background-color: #3CB4E5;
 }
 
 .project-2 {
   grid-area: project-2;
-  background-color: blue;
-}
+  }
+
+.project-2 a:hover {
+  background-color: #B864F9;
+    }
 
 .project-3 {
   grid-area: project-3;
-  background-color: green;
+  
 }
 
 .project-4 {
   grid-area: project-4;
-  background-color: aqua;
+  
 }
 
 .project-5 {
   grid-area: project-5;
-  background-color: brown;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .img-grid {
+    --num-cols: 2; 
+    --row-height: 200px;
+  }
 }
 .contact-info ul{
 list-style-type: none;
