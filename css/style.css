@@ -27,6 +27,33 @@ h1{
   color: #7D1A52;
   padding: 15px;
 }
+.navbar ul {
+  list-style-type: none;
+  background-color: #F38DB1;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #EA509C;
+}
+
+.navbar li {
+  float: left;
+}
 h2 {
   margin-right: 20px;
   color: #7D1A52;
@@ -48,30 +75,7 @@ h6 {
   margin: 0;
 }
 
-.navbar ul{
-  list-style-type: none;
-  background-color: #F38DB1;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-  display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  display: block;
-  text-align: center;
-}
-.navbar a:hover{
-  background-color:#EA509C;
-}
-.navbar li{
-  float: left;
-}
+
 p {
   margin: 0;
 }
@@ -81,26 +85,54 @@ p {
   justify-content: space-around;
   margin-top: 25px;
 }
-.page-section h3{
-  width: 20%;
-  text-align: right;
-  padding-right: 15px;
-}
 .page-section .info{
   border-left: 2px solid black;
   padding-left: 20px;
   width: 80%;
 }
-.picture-one{
-  max-width: 100%;
-  height: auto;
-  position: relative;
+.page-section h3{
+  width: 20%;
+  text-align: right;
+  padding-right: 15px;
 }
-.title{
-position: absolute;
-left: 0;
-top: 50px;
-background-color: aquamarine;
+.page-section .grid {
+  flex-basis: 80%;
+  background-color: grey;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  gap: 10px;
+  grid-template-areas:
+    "project-1 project-1"
+    "project-2 project-3"
+    "project-4 project-5";
+}
+
+.project-1 {
+  grid-area: project-1;
+}
+.project-1 img {
+  height: 100%;
+  width: auto;
+}
+
+.project-2 {
+  grid-area: project-2;
+  background-color: blue;
+}
+
+.project-3 {
+  grid-area: project-3;
+  background-color: green;
+}
+
+.project-4 {
+  grid-area: project-4;
+  background-color: aqua;
+}
+
+.project-5 {
+  grid-area: project-5;
+  background-color: brown;
 }
 .contact-info ul{
 list-style-type: none;
@@ -127,3 +159,4 @@ list-style-type: none;
 .contact-info li {
   float: left;
 }
+
